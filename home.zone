@@ -1,0 +1,18 @@
+$TTL 86400
+home. IN SOA ns root.ns.home. ( ; name_of_domain IN SOA server mailuser.hostname.
+  2020011900 ; serial
+  3600       ; refresh
+  900        ; retry
+  604800     ; expiry
+  86400      ; minimum
+)
+
+	IN	NS	ns
+	IN	MX	1 ns
+
+ns	IN	A	192.168.1.10
+dsm	IN	A	192.168.1.9
+gateway	IN	A	192.168.1.1
+living	IN	A	192.168.1.105
+
+gaming	IN	CNAME	living

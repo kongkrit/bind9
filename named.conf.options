@@ -1,0 +1,8 @@
+options {
+  directory "/var/cache/bind";
+  listen-on port 53 { 127.0.0.1; 192.168.1.0/24; };
+  allow-query { 127.0.0.1; 192.168.1.0/24; };
+  forwarders { 192.168.1.1; };
+  notify no;
+};
+

@@ -1,0 +1,5 @@
+zone "home" in {
+  type master;
+  file "/var/cache/bind/home.zone";
+  notify no;
+};
