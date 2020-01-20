@@ -2,5 +2,5 @@
 bind9 named server in docker
 
 ```
-docker run -d --restart always --network host --name bind9 bind9
+docker run -d --restart always --network host --name bind9 kongkrit/bind9
 ```
